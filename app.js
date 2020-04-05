@@ -104,7 +104,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+    var testarray = [2,3,4];
+    var tlml = 1;
+    for (var i = 0; i < multArr.length; i++){
+        tlml = multiply(tlml,multArr[i][0]);
+    }
+    return[tlml,'The numbers '+multArr+' have a product of '+tlml+'.']
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
